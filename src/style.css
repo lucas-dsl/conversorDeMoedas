@@ -9,11 +9,19 @@ body {
   padding: 1rem;
   max-width: 400px;
   margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  background:linear-gradient(rgb(163, 255, 25), rgb(95, 254, 167) 60%);
 }
 
 label {
   display: block;
   margin-top: 0.5rem;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1.5px 1.5px 3px rgb(0, 0, 0);
 }
 
 input,
@@ -21,12 +29,17 @@ select,
 button {
   margin-bottom: 1rem;
   width: 100%;
-  padding: 0.4rem;
+  padding: 0.6rem;
+  border-radius: 0.8rem;
+  border: 2px solid rgb(0, 0, 0);
 }
 
-button {
+#convert {
   background-color: #0077cc;
   color: white;
   border: none;
   cursor: pointer;
+  margin-top: 1rem;
+  padding: 0.6rem;
+  font-size: 1rem;
 }
