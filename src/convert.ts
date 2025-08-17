@@ -1,14 +1,11 @@
-import type { Currency } from "./types";
-import { rates } from "./data/rates";
+import type { Currency, RatesTable } from "./types";
 
 export default function convert(
   amount: number,
   from: Currency,
-  to: Currency
+  to: Currency,
+  rates: RatesTable
 ): number {
   const currentRate = rates[from][to];
-
-  const convertedAmount = amount * currentRate;
-
-  return + convertedAmount.toFixed(2);
+  return + (amount * currentRate).toFixed(2);
 }
